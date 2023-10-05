@@ -69,22 +69,12 @@ li.dropdown {
 }
 
 body {
-  background-image: url("testimage.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-}
-
-body:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: -1;
+  margin: 0; /* Remove default margin to eliminate borders */
+  padding: 0; /* Remove default padding */
+  background-image: url('your-image.jpg'); /* Specify the path to your image */
+  background-size: cover; /* Scale the image to cover the entire background */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Optional: Keep the background fixed while scrolling */
 }
 
 </style>
