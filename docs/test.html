@@ -52,71 +52,67 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.split {
-    height: 10%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.left {
-    left: 0;
+.title {
+  float: left;
 }
 
-.right {
-    right: 0;
+.dropdown-menu {
+  float: right;
 }
 </style>
-
-<div class="split left">
-        <h1>GetUWired</h1>
+<div class="header">
+    <div class="title"><h1>GetUWired</h1></div>
+    <div>
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li class=""dropdown">
+                <a href="#blog" class=""dropbtn">Blog</a>
+                <div class=""dropdown-content">
+                </div>
+            </li>
+            <li class="dropdown">
+            <a href="#products" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+                <a href="#">New Arrivals</a>
+                <a href="#">Featured</a>
+                <a href="#">Top Rated</a>
+                <a href="#">His</a>
+                <a href="#">Hers</a>
+                <a href="#">Kids</a>
+                <a href="#">Accessories</a>
+                <a href="#">Spring Catalog</a>
+                <a href="#">The Essentials</a>
+                <a href="#">Sale</a>
+            </div>
+            </li>
+            <li class="dropdown">
+            <a href="#locations" class="dropbtn">Locations</a>
+            <div class="dropdown-content">
+                <a href="#">AUSTIN, TX</a>
+                <a href="#">ATLANTA, GA</a>
+                <a href="#">SEATTLE, WA</a>
+                <a href="#">PORTLAND, OR</a>
+            </div>
+            </li>
+            <li class="dropdown">
+                <a href="#about" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                <a href="#">OUR STORY</a>
+                <a href="#">OUR COMMITMENT TO YOU</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
 
-<div class="split right">
-<ul>
-    <li><a href="#contact">Contact</a></li>
-    <li class=""dropdown">
-        <a href="#blog" class=""dropbtn">Blog</a>
-        <div class=""dropdown-content">
-        </div>
-       </li>
-    <li class="dropdown">
-       <a href="#products" class="dropbtn">Products</a>
-       <div class="dropdown-content">
-         <a href="#">New Arrivals</a>
-         <a href="#">Featured</a>
-         <a href="#">Top Rated</a>
-         <a href="#">His</a>
-         <a href="#">Hers</a>
-         <a href="#">Kids</a>
-         <a href="#">Accessories</a>
-         <a href="#">Spring Catalog</a>
-         <a href="#">The Essentials</a>
-         <a href="#">Sale</a>
-       </div>
-      </li>
-    <li class="dropdown">
-       <a href="#locations" class="dropbtn">Locations</a>
-       <div class="dropdown-content">
-         <a href="#">AUSTIN, TX</a>
-         <a href="#">ATLANTA, GA</a>
-         <a href="#">SEATTLE, WA</a>
-         <a href="#">PORTLAND, OR</a>
-       </div>
-     </li>
-    <li class="dropdown">
-        <a href="#about" class="dropbtn">About</a>
-        <div class="dropdown-content">
-          <a href="#">OUR STORY</a>
-          <a href="#">OUR COMMITMENT TO YOU</a>
-        </div>
-      </li>
-</ul>    
-</div>
+
+</header>
 
 </head>
 
