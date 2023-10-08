@@ -30,8 +30,6 @@ li a, .dropbtn {
   background-color: rgb(051,204,153);
   border-radius: 5px 5px 0px 0px;
   border-bottom-width: 500px;
-  border-bottom-color: black;
-  z-index: 5;
 }
 
 .dropdown:hover .header::after {
@@ -106,7 +104,12 @@ li a {
   width: 200px;
 }
 
+.dropbtn:hover body::after {
+  border-top: rgb(051,204,153);
+}
+
 body {
+  border-top: white;
   margin: 0;
   padding: 0;
   background-image: url('testimage.jpg'); 
