@@ -25,6 +25,8 @@ li a, .dropbtn {
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
+
+
 }
 
 .dropbtn:hover {
@@ -50,6 +52,7 @@ li a, .dropbtn {
 
 li.dropdown {
   display: inline-block;
+  
 }
 
 .dropdown-menu {
@@ -102,10 +105,20 @@ li.dropdown {
 
 li a {
   width: 200px;
+
 }
 
 .dropbtn:hover body {
   border-top: 3px rgb(051,204,153);
+}
+
+.li.dropdown:hover > .greenbar {
+  height: 5px;
+}
+
+.greenbar {
+  height: 0px;
+  background-color: rgb(051,204,153);
 }
 
 body {
@@ -127,7 +140,7 @@ body {
 
 <div class="header">
     <div class="title"><h1>GETUWIRED</h1></div>
-    <div>
+    <div class="btngroup">
         <ul>
             <li class="dropdown">
                 <a href="#contact" class="dropbtn">CONTACT</a>
@@ -173,6 +186,7 @@ body {
         </ul>
     </div>
 </div>
+<div class="greenBar"></div>
 </header>
 </head>
 
