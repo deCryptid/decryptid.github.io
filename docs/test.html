@@ -30,12 +30,6 @@ li a, .dropbtn {
   border-bottom: 3px rgb(051,204,153);
 }
 
-/*
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(051,204,153);
-}
-*/
-
 .dropdown:hover .header::after {
   content: '';
   display: block;
@@ -68,6 +62,7 @@ li.dropdown {
   min-width: 160px; 
   z-index: 2;
   text-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid rgb(051,204,153);
   }
 
 .dropdown-content a {
@@ -84,14 +79,7 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .header {
-  border-color: rgb(000,153,102);
-}
-
-.dropdown-content:hover .header::after {
-  display: block;
+  border-bottom-color: rgb(051,204,153);
 }
 
 .header {
