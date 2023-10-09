@@ -3,7 +3,7 @@
 <head>
 <style>
 
-html {
+  html {
     font-family: 'Cantarell', sans-serif;
 }
 
@@ -12,7 +12,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-
 }
 
 li {
@@ -25,8 +24,6 @@ li a, .dropbtn {
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
-
-
 }
 
 .dropbtn:hover {
@@ -52,7 +49,6 @@ li a, .dropbtn {
 
 li.dropdown {
   display: inline-block;
-  
 }
 
 .dropdown-menu {
@@ -68,7 +64,7 @@ li.dropdown {
   min-width: 160px; 
   z-index: 2;
   text-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
-}
+  }
 
 .dropdown-content a {
   color: white;
@@ -105,24 +101,44 @@ li.dropdown {
 
 li a {
   width: 200px;
-
 }
 
 .dropbtn:hover body {
   border-top: 3px rgb(051,204,153);
 }
 
-.li.dropdown:hover > .greenbar {
-  height: 5px;
+.dropbtn:hover {
+  background-color: rgb(051,204,153);
+  border-radius: 5px 5px 0px 0px;
+  border-bottom-width: 500px;
 }
 
-.greenbar {
-  height: 0px;
-  background-color: rgb(051,204,153);
+.btngroup {
+    background-color: #666;
+}
+
+.btngroup:hover {
+
+    background-color: #999;
+}
+
+.greenBar {
+    height: 5px;
+    background-color: rgb(051, 204, 153);
+    display: block;
+}
+
+.btngroup:hover .greenBar,
+.btngroup:hover ~ .greenBar{
+  display: none;
+}
+
+.btngroup:hover > .greenBar {
+  display: none;
 }
 
 body {
-  border-top: black;
+  border-top: white;
   margin: 0;
   padding: 0;
   background-image: url('testimage.jpg'); 
@@ -132,6 +148,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
 </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
