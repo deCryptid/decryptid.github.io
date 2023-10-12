@@ -34,12 +34,12 @@ li a, .dropbtn {
   border-bottom-width: 500px;
 }
 
-.header::after {
-  display: none;
-}
-
 li.dropdown {
   display: inline-block;
+}
+
+li.dropdown:hover .dropbtn  {
+  background-color: rgb(051,204,153);
 }
 
 .dropdown-menu {
@@ -146,7 +146,7 @@ body {
             </li>
             <li class="dropdown">
             <a href="#locations" class="dropbtn" style="width: 100%;">LOCATIONS</a>
-            <div class="dropdown-content">
+            <div class="dropdown-content" style="width:150%;">
                 <a href="#">AUSTIN, TX</a>
                 <a href="#">ATLANTA, GA</a>
                 <a href="#">SEATTLE, WA</a>
