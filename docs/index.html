@@ -445,6 +445,8 @@ amzn.copilot.checkCoPilotSession();
 
           </div>
 
+          <div>
+
           <div class="a-column a-span5">
             <label for="ap_password" class="a-form-label">
         
@@ -456,6 +458,11 @@ amzn.copilot.checkCoPilotSession();
             </label>
           </div>
 
+          <input type="password" maxlength="1024" id="ap_password" autocomplete="current-password" name="password" tabindex="2" class="a-input-text a-span12 auth-autofocus auth-required-field" aria-describedby="Enter your password" aria-required="true">
+          <div id="auth-password-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+            Enter your password
+          </div></div></div>
+          </div>
           
           <input type="hidden" name="create" value="0"/>
 
